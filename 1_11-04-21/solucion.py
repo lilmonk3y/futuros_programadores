@@ -14,8 +14,7 @@ for lineaDelArchivo in  archivoDeEntrada:
 
 archivoDeEntrada.close()
 # la lista de personas ahora tiene a todas las lineas del archivo y cada una es de la forma [nombre, YYYY/MM/DD]
-
-print(listaDePersonas)
+#print(listaDePersonas)
 
 listaDePersonasConEdad = []
 
@@ -24,8 +23,7 @@ for datosDeUnaPersona in listaDePersonas:
 	listaDePersonasConEdad.append([datosDeUnaPersona[0], fechaDeCumpleaños])
 
 # la lista de personas ahora es nombre y fecha de cumpleaños (como una fecha real de python)
-
-print(listaDePersonasConEdad)
+#print(listaDePersonasConEdad)
 
 listaDePersonasConEdadEnDias = []
 
@@ -34,12 +32,12 @@ for persona in listaDePersonasConEdad:
 	listaDePersonasConEdadEnDias.append([persona[0],persona[1], edadEnDias])
 
 # la lista ahora tiene a las personas más una propiedad mas que son los días de vida de la persona
-print(listaDePersonasConEdadEnDias)
+#print(listaDePersonasConEdadEnDias)
 
 listaDePersonasConEdadEnDiasOrdenada = sorted(listaDePersonasConEdadEnDias, key=itemgetter(2))
 
 # la lista ahora tiene a las personas ordenada por los dias de vida
-print(listaDePersonasConEdadEnDiasOrdenada)
+#print(listaDePersonasConEdadEnDiasOrdenada)
 
 listaDePersonasEsperada = []
 
@@ -51,7 +49,7 @@ for persona in listaDePersonasConEdadEnDiasOrdenada:
 		años])
 
 # ahora la lista está exactamente como espero la respuesta. me falta armar el archivo de salida
-print(listaDePersonasEsperada)
+#print(listaDePersonasEsperada)
 
 
 archivoDeSalida = open("salida_chris.txt", "w")
